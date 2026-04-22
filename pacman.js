@@ -42,3 +42,8 @@ const tileMap = [
     "X                 X",
     "XXXXXXXXXXXXXXXXXXX" 
 ];
+
+const wa1ls = new Set();
+const foods = new Set();
+const Ghosts = new Set();
+let pacman;
