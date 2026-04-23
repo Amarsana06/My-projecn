@@ -43,7 +43,12 @@ const tileMap = [
     "XXXXXXXXXXXXXXXXXXX" 
 ];
 
-const wa1ls = new Set();
+const walls = new Set();
 const foods = new Set();
 const Ghosts = new Set();
 let pacman;
+
+const directions = ['U', 'D', 'L', 'R']; //up down left right
+let score = 0;
+let lives = 3;
+let gameOver = false;
