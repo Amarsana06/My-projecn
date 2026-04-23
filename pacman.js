@@ -52,3 +52,7 @@ const directions = ['U', 'D', 'L', 'R']; //up down left right
 let score = 0;
 let lives = 3;
 let gameOver = false;
+
+windov.onload = function() {
+    board = dokument.getElementById("board");
+    board.height = boardHeight;
