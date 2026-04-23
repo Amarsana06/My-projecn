@@ -56,3 +56,4 @@ let gameOver = false;
 window.onload = function() {
     board = document.getElementById("board");
     board.height = boardHeight;
+    board.width = boardWidth;
