@@ -53,6 +53,6 @@ let score = 0;
 let lives = 3;
 let gameOver = false;
 
-windov.onload = function() {
-    board = dokument.getElementById("board");
+window.onload = function() {
+    board = document.getElementById("board");
     board.height = boardHeight;
