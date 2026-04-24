@@ -59,3 +59,45 @@ window.onload = function() {
     board.width = boardWidth;
     context = board.getContext("2d"); //used for drawing on the board
 
+    
+    loadImages();
+    loadMap();
+    // console.log(walls.size)
+    // console.log(foods.size)
+    // console.log(ghosts.size)
+    for (let ghost of ghosts.values()) {
+        const newDirection = directions[Math.floor(Math.random()*4)];
+        ghost.updateDirection(newDirection);
+    }
+    update();
+    document.addEventListener("keyup", movePacman);
+}
+
+function loadImages() {
+    wallImage = new Image();
+    wallImage.src = "./wall.png";
+
+    blueGhostImage = new Image();
+    blueGhostImage.src = "./blueGhost.png";
+    orangeGhostImage = new Image();
+    orangeGhostImage.src = "./orangeGhost.png"
+    pinkGhostImage = new Image()
+    pinkGhostImage.src = "./pinkGhost.png";
+    redGhostImage = new Image()
+    redGhostImage.src = "./redGhost.png";
+
+    pacmanUpImage = new Image();
+    pacmanUpImage.src = "./pacmanUp.png";
+    pacmanDownImage = new Image();
+    pacmanDownImage.src = "./pacmanDown.png";
+    pacmanLeftImage = new Image();
+    pacmanLeftImage.src = "./pacmanLeft.png";
+    pacmanRightImage = new Image();
+    pacmanRightImage.src = "./pacmanRight.png";
+}
+
+function loadMap() {
+    walls.clear();
+    foods.clear();
+    ghosts.clear();
+
