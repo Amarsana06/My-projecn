@@ -117,3 +117,8 @@ function loadMap() {
             else if (tileMapChar == 'b') { //blue ghost
                 const ghost = new Block(blueGhostImage, x, y, tileSize, tileSize);
                 ghosts.add(ghost);
+            }
+            else if (tileMapChar == 'o') { //orange ghost
+                const ghost = new Block(orangeGhostImage, x, y, tileSize, tileSize);
+                ghosts.add(ghost);
+            }
