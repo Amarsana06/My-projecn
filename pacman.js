@@ -102,3 +102,9 @@ function loadMap() {
     ghosts.clear();
            for (let r = 0; r < rowCount; r++) {
        for (let c = 0; c < columnCount; c++) {
+           for (let r = 0; r < rowCount; r++) {
+        for (let c = 0; c < columnCount; c++) {
+            const row = tileMap[r];
+            const tileMapChar = row[c];
+
+ 
