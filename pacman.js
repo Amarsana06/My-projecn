@@ -110,3 +110,7 @@ function loadMap() {
             const x = c*tileSize;
             const y = r*tileSize;
  
+            if (tileMapChar == 'X') { //block wall
+                const wall = new Block(wallImage, x, y, tileSize, tileSize);
+                walls.add(wall);  
+            }
