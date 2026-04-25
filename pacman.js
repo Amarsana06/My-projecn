@@ -107,4 +107,6 @@ function loadMap() {
             const row = tileMap[r];
             const tileMapChar = row[c];
 
+            const x = c*tileSize;
+            const y = r*tileSize;
  
