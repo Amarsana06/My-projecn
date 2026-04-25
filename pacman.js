@@ -114,3 +114,6 @@ function loadMap() {
                 const wall = new Block(wallImage, x, y, tileSize, tileSize);
                 walls.add(wall);  
             }
+            else if (tileMapChar == 'b') { //blue ghost
+                const ghost = new Block(blueGhostImage, x, y, tileSize, tileSize);
+                ghosts.add(ghost);
