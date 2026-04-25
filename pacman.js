@@ -122,3 +122,6 @@ function loadMap() {
                 const ghost = new Block(orangeGhostImage, x, y, tileSize, tileSize);
                 ghosts.add(ghost);
             }
+            else if (tileMapChar == 'p') { //pink ghost
+                const ghost = new Block(pinkGhostImage, x, y, tileSize, tileSize);
+                ghosts.add(ghost);
