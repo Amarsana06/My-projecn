@@ -129,3 +129,14 @@ function loadMap() {
             else if (tileMapChar == 'r') { //red ghost
                 const ghost = new Block(redGhostImage, x, y, tileSize, tileSize);
                 ghosts.add(ghost);
+                }
+            else if (tileMapChar == 'P') { //pacman
+                pacman = new Block(pacmanRightImage, x, y, tileSize, tileSize);
+            }
+            else if (tileMapChar == ' ') { //empty is food
+                const food = new Block(null, x + 14, y + 14, 4, 4);
+                foods.add(food);
+            }
+        }
+    }
+}
