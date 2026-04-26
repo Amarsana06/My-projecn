@@ -140,3 +140,12 @@ function loadMap() {
         }
     }
 }
+
+function update() {
+    if (gameOver) {
+        return;
+    }
+    move();
+    draw();
+    setTimeout(update, 50); //1000/50 = 20 FPS
+}
