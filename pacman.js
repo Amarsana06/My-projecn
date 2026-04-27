@@ -176,3 +176,16 @@ function draw() {
         context.fillText("x" + String(lives) + " " + String(score), tileSize/2, tileSize/2);
     }
 }
+
+function move() {
+    pacman.x += pacman.velocityX;
+    pacman.y += pacman.velocityY;
+
+    //check wall collisions
+    for (let wall of walls.values()) {
+        if (collision(pacman, wall)) {
+            pacman.x -= pacman.velocityX;
+            pacman.y -= pacman.velocityY;
+            break;
+        }
+    }
