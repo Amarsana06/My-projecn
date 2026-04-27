@@ -157,3 +157,11 @@ function draw() {
         context.drawImage(ghost.image, ghost.x, ghost.y, ghost.width, ghost.height);
     }
     
+    for (let wall of walls.values()) {
+        context.drawImage(wall.image, wall.x, wall.y, wall.width, wall.height);
+    }
+
+    context.fillStyle = "white";
+    for (let food of foods.values()) {
+        context.fillRect(food.x, food.y, food.width, food.height);
+    }
