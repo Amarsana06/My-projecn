@@ -189,3 +189,14 @@ function move() {
             break;
         }
     }
+    
+    //check ghosts collision
+    for (let ghost of ghosts.values()) {
+        if (collision(ghost, pacman)) {
+            lives -= 1;
+            if (lives == 0) {
+                gameOver = true;
+                return;
+            }
+            resetPositions();
+        }
