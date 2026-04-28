@@ -200,3 +200,7 @@ function move() {
             }
             resetPositions();
         }
+        
+        if (ghost.y == tileSize*9 && ghost.direction != 'U' && ghost.direction != 'D') {
+            ghost.updateDirection('U');
+        }
