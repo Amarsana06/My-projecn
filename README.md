@@ -93,4 +93,4 @@
 
 
 
-Ссылка на яндекс диск для просмотра игры и файлов    -    https://disk.yandex.ru/d/MBrWkibvKgMwCw
+Ссылка на яндекс диск для просмотра игры     -    https://disk.yandex.ru/d/MBrWkibvKgMwCw
